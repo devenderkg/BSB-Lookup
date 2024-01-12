@@ -8,7 +8,7 @@ async function lookupBSB() {
     bsbNumber = formattedBsbNumber.replace(/(\d{3})(\d{3})/, "$1-$2");
 
     // Assuming your CSV file is in the same directory as your HTML file
-    const csvUrl = '/assets/data.csv';
+    const csvUrl = 'https://devenderkg.github.io/assets/data.csv';
 
     try {
         const response = await fetch(csvUrl);
