@@ -1,213 +1,149 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
-    <!-- Primary Meta Tags -->
-    <title>BSB Lookup - Australia BSB Number Checker</title>
-    <meta name="title" content="BSB Lookup - Australia BSB Number Checker">
-    <meta name="description" content="Search BSB Numbers - Find Australian Bank NSN Numbers by Number, State, Institution, or Bank.">
-
-    <meta charset="utf-8">	    <title>BSB Lookup - Australia BSB Number Checker</title>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">	    <meta name="title" content="BSB Lookup - Australia BSB Number Checker">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <!-- Open Graph / Facebook -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="description"
+        content="Discover Australian Bank NSN Numbers easily with our BSB Number Search. Locate NSN Numbers by Number, State, Institution, or Bank effortlessly.">
+    <meta property="og:title" content="Search Australian Bank and Institution BSB Numbers | BSB Lookup">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://myonlinecompass.online/">
-    <meta property="og:title" content="BSB Lookup - Australia BSB Number Checker">
-    <meta property="og:description" content="Search BSB Numbers - Find Australian Bank NSN Numbers by Number, State, Institution, or Bank.">
-    <meta property="og:image" content="meta.png">
-
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://myonlinecompass.online/">
-    <meta property="twitter:title" content="BSB Lookup - Australia BSB Number Checker">
-    <meta property="twitter:description" content="Search BSB Numbers - Find Australian Bank NSN Numbers by Number, State, Institution, or Bank.">
-    <meta property="twitter:image" content="meta.png">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-
-
-    <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-<!-- Bootstrap JS and Popper.js -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-    <style>
-    .tbody {
-        font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        background-color: #f5f5f5;
-    }
-
-    #bsbLookupContainer {
-        text-align: center;
-        background-color: #FAEED1; /* Light beige background */
-        padding: 20px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        border-radius: 10px;
-        width: 80%;
-    }
-
-    h1 {
-        font-size: 24px;
-        color: #607274; /* Grayish-green text */
-    }
-
-    input {
-        width: 100%;
-        padding: 10px;
-        margin: 10px 0;
-        border: 1px solid #DED0B6; /* Light brown border */
-        border-radius: 5px;
-        box-sizing: border-box;
-    }
-
-    button {
-        width: 100%;
-        padding: 10px;
-        background-color: #B2A59B; /* Dark grayish-brown button background */
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-    }
-
-    #bsbData {
-        margin-top: 20px;
-        text-align: left;
-    }
-
-    .dataItem {
-        margin-bottom: 10px;
-    }
-
-    #socialButtons {
-        margin-top: 20px;
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .socialButton {
-        width: calc(33.33% - 10px);
-        padding: 10px;
-        background-color: #007bff; /* Blue social buttons */
-        color: #fff;
-        text-decoration: none;
-        text-align: center;
-        border-radius: 5px;
-        box-sizing: border-box;
-    }
-
-    #googleMaps {
-        margin-top: 20px;
-    }
-    </style>
+    <meta property="og:url" content="https://devenderkg.github.io/bsb-lookup/">
+    <meta property="og:image" content="/assets/og.png">
+    <meta property="og:description" content="Discover Australian Bank NSN Numbers easily with our BSB Number Search. Locate NSN Numbers by Number, State, Institution, or Bank effortlessly.">
+    
+    <link rel="shortcut icon" type="image/png" href="/assets/icon.png">
+    <link rel="stylesheet" href="/assets/pico.min.css">
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="canonical" href="https://devenderkg.github.io/bsb-lookup/">
+    <title>Search Australian Bank and Institution BSB Numbers | BSB Lookup</title>
+    <!-- Start of twitter card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@devenderkg">
+    <meta name="twitter:title" content="Search Australian Bank and Institution BSB Numbers | BSB Lookup">
+    <meta name="twitter:description"
+        content="Discover Australian Bank NSN Numbers easily with our BSB Number Search. Locate NSN Numbers by Number, State, Institution, or Bank effortlessly.">
+    <meta name="twitter:image" content="/assets/og.png">
+    <!-- End of twitter card data -->
+    <!-- Google tag (gtag.js) -->
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item ">
-                    <a class="nav-link" href="/">BSB Lookup</a>
+    <header style="padding-top: 0.8rem; padding-bottom: 2rem; max-width: 1000px;" class="container">
+        <nav>
+            <ul>
+                <li>
+                    <strong>
+              <a href="/">BSB Lookup</a>
+            </strong>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://fixmyspeaker.pro/">Fix My Speaker</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="https://whatismyscreenresolution.pro/">What Is My Screen Resolution</a>
-                </li>
-               
-                
-    
             </ul>
-    
-        </div>
-    </nav>
-  <div class="tbody">  
+            <small>
+          <ul>
+            <li>
+              <a href="#">Blog</a>
+            </li>
+            <li>
+              <a style="color: black;" href="https://www.buymeacoffee.com/devenderkg" rel="noopener noreferrer" target="_blank">♥</a>
+            </li>
+          </ul>
+        </small>
+        </nav>
+    </header>
+    <main style="padding-top: 0rem;" class="container">
+        <h1 style="margin-bottom: 1.5rem;">BSB Lookup - Australia BSB Number Checker</h1>
 
-    <div id="bsbLookupContainer">
-        <h1>BSB Lookup - Australia BSB Number Checker</h1>
+
         <input type="text" id="bsbNumberInput" placeholder="BSB Number">
         <button onclick="lookupBSB()">Submit</button>
-    
-        <div id="bsbData"></div>
-    
-        <div id="socialButtons">
-            <a href="#" class="socialButton" target="_blank">Twitter</a>
-            <a href="#" class="socialButton" target="_blank">Facebook</a>
-            <a href="#" class="socialButton" target="_blank">Email</a>
+        <div class="grid">
+            <div id="bsbData"></div>
+            <div id="googleMaps"></div>
         </div>
-    
-        <div id="googleMaps"></div>
-    </div>
-    
-    <script>
-        async function lookupBSB() {
-            let bsbNumber = document.getElementById("bsbNumberInput").value;
-    
-            // Remove non-numeric characters
-            const formattedBsbNumber = bsbNumber.replace(/\D/g, '');
-    
-            // Format to "000-000" if not already in that format
-            bsbNumber = formattedBsbNumber.replace(/(\d{3})(\d{3})/, "$1-$2");
-    
-            // Assuming your CSV file is in the same directory as your HTML file
-            const csvUrl = 'data.csv';
-    
-            try {
-                const response = await fetch(csvUrl);
-                const data = await response.text();
-    
-                // Parse CSV data
-                const rows = data.split('\n');
-                const headers = rows[0].split(',');
-    
-                let dataTable = {};
-                rows.slice(1).forEach(row => {
-                    const rowData = row.split(',');
-                    const currentBsbNumber = rowData[0].trim();
-    
-                    if (currentBsbNumber === bsbNumber) {
-                        rowData.forEach((value, index) => {
-                            dataTable[headers[index].trim()] = value.trim();
-                        });
-                    }
-                });
-    
-                // Display the data in div elements
-                const bsbDataDiv = document.getElementById("bsbData");
-                bsbDataDiv.innerHTML = "";
-    
-                for (const key in dataTable) {
-                    const divItem = document.createElement("div");
-                    divItem.classList.add("dataItem");
-                    divItem.innerHTML = `<strong>${key}:</strong> ${dataTable[key]}`;
-                    bsbDataDiv.appendChild(divItem);
-                }
-    
-                // Display Google Maps (Assuming you have latitude and longitude data)
-                const googleMapsHtml = `<iframe width="100%" height="200" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.google.com/maps?q=${dataTable["Address"]}, ${dataTable["City"]}, ${dataTable["State"]} ${dataTable["Postcode"]}&output=embed"></iframe>`;
-                document.getElementById("googleMaps").innerHTML = googleMapsHtml;
-    
-            } catch (error) {
-                console.error("Error fetching data:", error);
-            }
-        }
-    </script>
-    </div>
-    </body>
-    </html>
+        <hr style="margin-bottom: 2rem;">
+        <p>
+            BSB Numbers play a crucial role as concise identifiers for bank details, providing a convenient alternative to
+            remembering lengthy strings of text. Instead of burdening customers with extensive information, a brief numerical
+            code is assigned, facilitating easy interpretation by banks and businesses to access crucial bank account details.
+        </p>
+        
+        <p>
+            Breaking down the BSB number, the first two digits represent the parent financial institution, the third designates
+            the state of the branch, and the fourth to sixth digits specify the branch itself. For instance, analyzing the BSB
+            033088 reveals the following breakdown:
+        </p>
+        
+        <ul>
+            <li>03: Westpac Banking Corporation</li>
+            <li>3: Victoria</li>
+            <li>088: 383 Chapel Street, Prahran</li>
+        </ul>
+        
+        <p>
+            Although this numbering convention is typically followed by banks, building societies, and credit unions might
+            deviate. However, this divergence doesn't impact the ability to decipher bank details. Some financial institutions
+            might opt for a centralized BSB for all accounts, exemplified by Suncorp's use of 484799 for all deposit accounts,
+            irrespective of the branch or state of account origination.
+        </p>
+        
+        <p>
+            In terms of the third digit in the BSB, indicative of the state of origin, the following guide can be referenced:
+        </p>
+        
+        <ul>
+            <li>2: Australian Capital Territory, New South Wales</li>
+            <li>3: Victoria</li>
+            <li>4: Queensland</li>
+            <li>5: South Australia, Northern Territory</li>
+            <li>6: Western Australia</li>
+            <li>7: Tasmania</li>
+        </ul>
+        
+        <details>
+            <summary>What is the BSB number in banking?</summary>
+            <p>The BSB number (Bank/State/Branch number) is a numerical code used in banking to identify a specific branch and
+                location of a customer's account. It facilitates the efficient processing of transactions and is primarily used
+                within Australia.
+            </p>
+        </details>
+        
+        <details>
+            <summary>
+                What are the first 3 digits of the BSB?
+            </summary>
+            <p>The first 3 digits of the BSB number represent the following:
+            <ul>
+                <li>The first two digits specify the parent financial institution.</li>
+                <li>The third digit specifies the state where the branch is located.
+                </li>
+            </ul>
+            </p>
+        </details>
+        
+        <details>
+            <summary>Is BSB a Swift number?
+            </summary>
+            <p>No, the BSB (Bank/State/Branch) number is not the same as a SWIFT (Society for Worldwide Interbank Financial
+                Telecommunication) number. BSB is used specifically in the Australian banking system to identify branches within
+                the country. On the other hand, SWIFT codes are used internationally for identifying banks and financial
+                institutions globally.
+            </p>
+        </details>
+        
+
+
+        <script type="text/javascript" src="/assets/script.js"></script>
+        <footer style="padding-top: 2rem; max-width: 1000px;" class="container">
+            <nav>
+                <ul>
+                    <li>Created by <a href="https://x.com/devenderkg/" rel="noopener noreferrer"
+                            target="_blank">Devender Gupta</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li>♥ <a href="https://www.buymeacoffee.com/devenderkg" rel="noopener noreferrer"
+                            target="_blank">Support</a>
+                    </li>
+                </ul>
+            </nav>
+        </footer>
